@@ -16,11 +16,11 @@ The data analysis workflow can be outlined as follows:
 **2. Loading the data and environment setup**: The time series data was loaded into Jupyter Lab using Python. Relevant libraries for data analysis were also imported:
 
 - `pandas`: for Data Management and Data Manipulation
-	- `numpy`: for numerical and scientific computing
-	- `matplotlib`, `seaborn`, `plotly`: for data visualization
-	- `sklearn.metrics` (scikit-learn): for model evaluation metrics such as RMSE, MAPE, and SMAPE
-	- `xgboost.XGBRegressor`: a gradient boosting type decision tree machine learning algorithm used for time series forecasting
-	- `TimeSeriesSplit`: for time series cross-validation
+- `numpy`: for numerical and scientific computing
+- `matplotlib`, `seaborn`, `plotly`: for data visualization
+- `sklearn.metrics` (scikit-learn): for model evaluation metrics such as RMSE, MAPE, and SMAPE
+- `xgboost.XGBRegressor`: a gradient boosting type decision tree machine learning algorithm used for time series forecasting
+- `TimeSeriesSplit`: for time series cross-validation
 
 **3. Data Cleaning:** The data cleaning methods used in here include:
 
@@ -29,21 +29,25 @@ The data analysis workflow can be outlined as follows:
 - Missing value imputation
 
 **4. Feature Engineering**
-	- Added time series features (e.g., day of week, day of year, month, etc.)
-	- Added rolling statistics and quantiles
+
+- Added time series features (e.g., day of week, day of year, month, etc.)
+- Added rolling statistics and quantiles
 
 **5. Time Lags Creation**
-	- Added lags in time to let the XGBoost Regressor model learn historical values and the temporal structure of the data.
+
+- Added lags in time to let the XGBoost Regressor model learn historical values and the temporal structure of the data.
 
 **6. Time Series Cross-validation**
-	- Made use of `TimeSeriesSplit` for expanding window cross-validation
-	- Created training and testing (validation) sets
+
+- Made use of `TimeSeriesSplit` for expanding window cross-validation
+- Created training and testing (validation) sets
 
 **7. Model Fitting, Forecasting, and Evaluation**
-	- Fit the XGBoost model on the training and testing data
-	- Trained on the training set, and validated on the testing set
-	- Generated future patient arrival forecasts
-	- Evaluated the model with performance metrics across all the folds with root mean squared error (RMSE), mean absolute percentage error (MAPE), and symmetric mean absolute percentage error (sMAPE).
+
+- Fit the XGBoost model on the training and testing data
+- Trained on the training set, and validated on the testing set
+- Generated future patient arrival forecasts
+- Evaluated the model with performance metrics across all the folds with root mean squared error (RMSE), mean absolute percentage error (MAPE), and symmetric mean absolute percentage error (sMAPE).
 
 ---
 
