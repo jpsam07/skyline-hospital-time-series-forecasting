@@ -8,7 +8,7 @@ This is a data analysis project that aimed to forecast future patient arrivals d
 
 The data analysis workflow can be outlined as follows:
 
-- [[#Data Collection|Data Collection]]
+- [Data Collection](#data-collection)
 - [[#Environment Setup and Data Loading|Environment Setup and Data Loading]]
 - [[#Data Cleaning|Data Cleaning]]
 - [[#Feature Engineering|Feature Engineering]]
@@ -16,6 +16,8 @@ The data analysis workflow can be outlined as follows:
 - [[#Time Series Cross-Validation|Time Series Cross-Validation]]
 - [[#Model Fitting, Forecasting, and Evaluation|Model Fitting, Forecasting, and Evaluation]]
 - [[#Solution Selection|Solution Selection]]
+
+
 
 
 ## Data Collection
