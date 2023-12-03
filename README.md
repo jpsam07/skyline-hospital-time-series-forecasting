@@ -9,16 +9,13 @@ This is a data analysis project that aimed to forecast future patient arrivals d
 The data analysis workflow can be outlined as follows:
 
 - [Data Collection](#data-collection)
-- [[#Environment Setup and Data Loading|Environment Setup and Data Loading]]
-- [[#Data Cleaning|Data Cleaning]]
-- [[#Feature Engineering|Feature Engineering]]
-- [[#Time Lags Creation|Time Lags Creation]]
-- [[#Time Series Cross-Validation|Time Series Cross-Validation]]
-- [[#Model Fitting, Forecasting, and Evaluation|Model Fitting, Forecasting, and Evaluation]]
-- [[#Solution Selection|Solution Selection]]
-
-
-
+- [Environment Setup and Data Loading](#environment-setup-and-data-loading)
+- [Data Cleaning](#data-cleaning)
+- [Feature Engineering](#feature-engineering)
+- [Time Lags Creation](#time-lags-creation)
+- [Time Series Cross Validation](#time-series-cross-validation)
+- [Model Fitting, Forecasting, and Evaluation](#model-fitting-forecasting-and-evaluation)
+- [Solution Selection](#solution-selection)
 
 ## Data Collection
 
@@ -53,7 +50,7 @@ The data cleaning methods used in here include:
 
 - Added lags in time to let the XGBoost Regressor model learn historical values and the temporal structure of the data.
 
-## Time Series Cross-Validation
+## Time Series Cross Validation
 
 - Made use of `TimeSeriesSplit` for expanding window cross-validation
 - Created training and validation sets
