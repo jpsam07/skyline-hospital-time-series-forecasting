@@ -8,6 +8,16 @@ This is a data analysis project that aimed to forecast future patient arrivals d
 
 The data analysis workflow can be outlined as follows:
 
+- [[#Data Collection|Data Collection]]
+- [[#Environment Setup and Data Loading|Environment Setup and Data Loading]]
+- [[#Data Cleaning|Data Cleaning]]
+- [[#Feature Engineering|Feature Engineering]]
+- [[#Time Lags Creation|Time Lags Creation]]
+- [[#Time Series Cross-Validation|Time Series Cross-Validation]]
+- [[#Model Fitting, Forecasting, and Evaluation|Model Fitting, Forecasting, and Evaluation]]
+- [[#Solution Selection|Solution Selection]]
+
+
 ## Data Collection
 
 - Hospital sent daily time series data of patient arrivals in a csv file through email
