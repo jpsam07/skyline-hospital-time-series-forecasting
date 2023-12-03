@@ -4,7 +4,7 @@
 
 **Source:** [Facebook Page](https://www.facebook.com/SkylineHospitalAndMedicalCenter)
 
-This is a data analysis project that aims to forecast future patient arrivals data on the outpatient unit of Skyline Hospital and Medical Center. This is a dedicated repository for the data analytics feature of the [appointment management system](thesis-manuscript/appointment_management_system_thesis.pdf) for our bachelor's degree thesis.
+This is a data analysis project that aimed to forecast future patient arrivals data on the outpatient unit of Skyline Hospital and Medical Center. This is a dedicated repository for the data analytics feature of the [appointment management system](thesis-manuscript/appointment_management_system_thesis.pdf) for our bachelor's degree thesis.
 
 The data analysis workflow can be outlined as follows:
 
