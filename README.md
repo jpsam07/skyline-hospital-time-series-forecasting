@@ -1,12 +1,13 @@
 # Skyline Hospital Time Series Forecasting with XGBoost
 
-![https://www.facebook.com/SkylineHospitalAndMedicalCenter](./pictures/skyline_hospital_banner.jpg)
+![README Banner](./pictures/skyline_hospital_banner.jpg)
 
-**Photo Source:** [Facebook Page](https://www.facebook.com/SkylineHospitalAndMedicalCenter)
+**Image Source:** [Facebook Page](https://www.facebook.com/SkylineHospitalAndMedicalCenter)
 
-This is a data analysis project that aimed to forecast future patient arrivals data on the outpatient unit of Skyline Hospital and Medical Center. This is a dedicated repository for the data analytics feature of the [appointment management system](thesis-manuscript/appointment_management_system_thesis.pdf) for our bachelor's degree thesis.
+This is a data analysis project that aimed to forecast future patient arrivals data on the outpatient unit of Skyline Hospital and Medical Center. The repository is for the data analytics feature of the [appointment management system](thesis-manuscript/appointment_management_system_thesis.pdf) of our bachelor's degree thesis.
 
-The data analysis workflow can be outlined as follows:
+> [!NOTE]
+> Click the [NBViewer URL here](https://nbviewer.org/github/jpsam07/skyline-hospital-time-series-forecasting-with-xgboost/blob/86cbdb2ac0be55b8d13a9f4f1c14e0315ddfd7f1/Solution_2.ipynb) for a richer view of the analysis done in a Jupyter Notebook. You can also find the URL itself under the About section of this repository.
 
 - [Data Collection](#data-collection)
 - [Environment Setup and Data Loading](#environment-setup-and-data-loading)
@@ -19,7 +20,7 @@ The data analysis workflow can be outlined as follows:
 
 ## Data Collection
 
-- Hospital sent daily time series data of patient arrivals in a csv file through email
+- Hospital's IT department sent daily time series data of patient arrivals in a csv file via email.
 - The time series data time frame was **from May 18, 2020 to December 31, 2022.**
 
 ## Environment Setup and Data Loading
@@ -37,8 +38,19 @@ The time series data was **loaded into Jupyter Lab using Python**. Relevant libr
 
 The data cleaning methods used in here include:
 
+- Subsetting columns needed for time series analysis
+- Renaming DataFrame columns for better clarity
+
+![Subsetting and renaming columns](./pictures/subsetting_and_renaming_columns.png)
+
 -  Merging duplicate dates with corresponding patient arrival counts
+
+![Merging duplicate dates](./pictures/merging_duplicate_dates.png)
+
 - Outlier analysis
+
+![]()
+
 - Missing value imputation
 
 ## Feature Engineering
@@ -68,3 +80,6 @@ The data cleaning methods used in here include:
 
 - [Solution 1](https://nbviewer.org/github/jpsam07/skyline-hospital-time-series-forecasting-with-xgboost/blob/0e4cbc6abc432b8f6b2d1a347240c293a1fe6deb/Solution_1.ipynb) discarded the point in time where the missing values have stopped appearing, and built the XGBoost forecasting model from there.
 - [Solution 2](https://nbviewer.org/github/jpsam07/skyline-hospital-time-series-forecasting-with-xgboost/blob/0e4cbc6abc432b8f6b2d1a347240c293a1fe6deb/Solution_2.ipynb) used missing value imputation using linear interpolation to estimate the missing values, and used winsorization to adjust data points that deviate too much from the distribution. Then the XGBoost model was built from there. **This is the favorable solution as the forecast more closely resembles the temporal structure of the time series data** compared to Solution 1.
+
+----
+
