@@ -116,7 +116,7 @@ The data cleaning methods used in here include:
 - [Solution 1](https://github.com/jpsam07/skyline-hospital-time-series-forecasting-with-xgboost/blob/d4274475b42aff2f5ab10a121dc4431fe2e2c84a/Solution_1.ipynb) discarded the point in time where the missing values have stopped appearing, and built the XGBoost forecasting model from there.
 - [Solution 2](https://nbviewer.org/github/jpsam07/skyline-hospital-time-series-forecasting-with-xgboost/blob/d4274475b42aff2f5ab10a121dc4431fe2e2c84a/Solution_2.ipynb) used missing value imputation with linear interpolation to estimate the missing values, and winsorization to adjust data points that deviate too much from the distribution. Then the XGBoost model was built from there. **This is the favorable solution as the forecast more closely resembles the temporal structure of the time series data** compared to Solution 1.
 
-### References
+## References
 
 - Rob Mulla. (2022, August 7). _Time Series Forecasting with XGBoost - Advanced Methods_ [Video]. YouTube. https://www.youtube.com/watch?v=z3ZnOW-S550
 
