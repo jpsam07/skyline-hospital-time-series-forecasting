@@ -47,11 +47,15 @@ The data cleaning methods used in here include:
 
 ![Merging duplicate dates](./pictures/merging_duplicate_dates.png)
 
+- Missing value imputation
+
+![](./pictures)
+
 - Outlier analysis
 
-![]()
+![Outlier Analysis Code](./pictures/outlier_analysis.png)
 
-- Missing value imputation
+![Winsorized Patient Arrivals Plot](./pictures/winsorized_patient_arrivals.png)
 
 ## Feature Engineering
 
