@@ -16,7 +16,9 @@ This is a data analysis project that aimed to forecast future patient arrivals d
 - [Time Lags Creation](#time-lags-creation)
 - [Time Series Cross Validation](#time-series-cross-validation)
 - [Model Fitting, Forecasting, and Evaluation](#model-fitting-forecasting-and-evaluation)
+- [Conclusion](#Conclusion)
 - [Solution Selection](#solution-selection)
+- [References](#References)
 
 ## Data Collection
 
